@@ -1,0 +1,5 @@
+microservice\user\reactive\login\application\AuthUseCaseImplTest.class
+microservice\user\reactive\login\domain\service\DniValidationServiceTest.class
+microservice\user\reactive\login\infraestructure\driver\rest\controller\UserControllerTest.class
+microservice\user\reactive\login\application\UserUseCaseImplTest.class
+microservice\user\reactive\login\infraestructure\driver\rest\controller\AuthControllerTest.class
