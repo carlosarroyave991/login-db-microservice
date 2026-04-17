@@ -22,7 +22,20 @@
         <mapstruct.version>1.6.2</mapstruct.version>
         <lombok.version>1.18.34</lombok.version>
         <springdoc.version>2.6.0</springdoc.version>
+        <spring-cloud.version>2023.0.3</spring-cloud.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <!-- Web imperativo -->
@@ -94,6 +107,12 @@
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-jackson</artifactId>
             <version>0.11.5</version>
+        </dependency>
+
+        <!-- FeignClient -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <!-- Swagger / OpenAPI -->
